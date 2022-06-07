@@ -7,7 +7,7 @@ import useForm from "../../Hooks/useForm";
 import classNames from "classnames";
 const Login = () => {
   //Custom hook call
-  const { handleChange, values, errors, handleSubmit } = useForm();
+  const { handleChange, errors, handleSubmit } = useForm();
 
   return (
     <div className="login">

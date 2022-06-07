@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./plan.scss";
 import Cotization from "./Cotization";
 import Steps from "./Steps";
