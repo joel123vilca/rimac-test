@@ -1,0 +1,465 @@
+.plan {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  height: 100vh;
+  .steps {
+    background: #f7f8fc;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 25%;
+    padding-left: 50%;
+    .step__one {
+      display: flex;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      .one {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #c5cbe0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #c5cbe0;
+      }
+      span {
+        margin-left: 15px;
+        color: #a3abcc;
+      }
+    }
+    .step__two {
+      display: flex;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 24px;
+      .two {
+        width: 24px;
+        height: 24px;
+        background: #6f7dff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: white;
+      }
+      span {
+        margin-left: 15px;
+        color: #494f66;
+      }
+    }
+    .step__content {
+      display: none;
+      .btn__back {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #f0f2fa;
+      }
+      .step__text {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        color: #676f8f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .step__line {
+        display: flex;
+        align-items: center;
+        .barra {
+          width: 176px;
+          height: 6px;
+          background: #6769ff;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 25% 0 5%;
+    background: #ffffff;
+    .back__btn {
+      cursor: pointer;
+      display: inline;
+      span {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: #a3abcc;
+      }
+      button {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #fc606b;
+        background: #ffffff;
+        border-radius: 50%;
+      }
+    }
+    .profile__content {
+      background-color: #ffffff;
+    }
+    .profile__name {
+      margin-top: 30px;
+      display: block;
+      .greeting {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: #494f66;
+      }
+      .first__name {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        color: #ef3340;
+      }
+    }
+    .coverage {
+      display: none;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      color: #494f66;
+    }
+    .profile__description {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #676f8f;
+    }
+    .profile__car {
+      display: flex;
+      border: 3px solid #f0f2fa;
+      background-color: #ffffff;
+      border-radius: 12px;
+      height: 160px;
+      position: relative;
+      margin-top: 40px;
+      .car__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 20px;
+        .placa {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 20px;
+          color: #a3abcc;
+        }
+        .car__name {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 28px;
+          color: #494f66;
+          width: 190px;
+        }
+      }
+      .man__image {
+        position: absolute;
+        right: 10px;
+        top: -20px;
+      }
+    }
+    .profile__range {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 40px;
+      .range__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          color: #494f66;
+        }
+        .count {
+          font-family: "Lato";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          color: #676f8f;
+        }
+      }
+      .increment {
+        width: 160px;
+        height: 56px;
+        border: 1px solid #c5cbe0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        input {
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          border-radius: 8px;
+          outline: none;
+          width: 80px;
+          color: #494f66;
+          text-align: center;
+        }
+        button {
+          border: 1px solid #ffffff;
+          background: #ffffff;
+          border-radius: 8px;
+          color: #6f7dff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .profile__content {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #494f66;
+      margin-top: 20px;
+    }
+    .profile__tabs {
+      .tabs__btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+      }
+      .tab {
+        border-bottom: 1px solid #e4e8f7;
+        margin-top: 10px;
+        padding-bottom: 20px;
+      }
+      .tabs__content {
+        margin-top: 30px;
+        .tab__header {
+          display: flex;
+          .name {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #494f66;
+          }
+          .action {
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+          }
+        }
+        .tab__body {
+          padding-left: 60px;
+          .options {
+            margin-top: 12px;
+            cursor: pointer;
+            .button__ad {
+              width: 24px;
+              height: 24px;
+              font-size: 16px;
+              border-radius: 50%;
+              background-color: #ffffff;
+              border: 1px solid #939dff;
+              color: #939dff;
+            }
+            span {
+              font-family: "Lato";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              color: #939dff;
+              margin-left: 20px;
+            }
+          }
+          .description {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            color: #676f8f;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .cotization {
+    display: flex;
+    flex-direction: column;
+    padding: 30% 40% 0 5%;
+    position: relative;
+    .cotization__title {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      color: #494f66;
+      display: block;
+    }
+    .cotization__price {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      color: #494f66;
+      margin-top: 10px;
+    }
+    .cotization__time {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #676f8f;
+      margin-top: 4px;
+      display: block;
+    }
+    .cotization__line {
+      height: 0;
+      border: 0;
+      border-top: 1px solid #083972;
+      display: block;
+    }
+    .cotization__description {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #494f66;
+      display: block;
+    }
+    .cotization__list {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #676f8f;
+      margin-top: 10px;
+      list-style-image: url(../../assets/ic_check.png);
+    }
+    button {
+      background: #ef3340;
+      border: 1px solid #ef3340;
+      border-radius: 8px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      color: #ffffff;
+      height: 50px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .plan {
+    grid-template-columns: 100%;
+    .steps {
+      background: #ffffff;
+      height: 45px;
+      padding-top: 5%;
+      padding-left: 5%;
+      padding-right: 5%;
+      .step__one {
+        display: none;
+      }
+      .step__two {
+        display: none;
+      }
+      .step__content {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .profile {
+      padding: 0 0 0 0;
+      .back__btn {
+        display: none;
+      }
+      .coverage {
+        display: block;
+      }
+      .profile__name {
+        display: none;
+      }
+      .profile__body {
+        width: 100%;
+        position: relative;
+        padding: 5% 10% 10% 5%;
+        background: #f7f8fc;
+      }
+      .profile__car {
+        width: 90%;
+      }
+      .profile__range {
+        display: flex;
+        flex-direction: column;
+        padding: 5% 5% 5% 5%;
+        .increment {
+          margin-top: 10px;
+          width: 100%;
+        }
+      }
+      .profile__content {
+        padding: 0 5% 0 5%;
+      }
+    }
+    .cotization {
+      position: fixed;
+      width: 90%;
+      padding: 5% 5% 0 5%;
+      bottom: 10px;
+      box-shadow: 0px 1px 4px rgba(163, 171, 204, 0.06),
+        0px 8px 30px rgba(20, 43, 127, 0.1);
+      background: #ffffff;
+      flex-direction: row;
+      justify-content: center;
+      .cotization__title {
+        display: none;
+      }
+      .cotization__time {
+        display: none;
+      }
+      .cotization__list {
+        display: none;
+      }
+      .cotization__description {
+        display: none;
+      }
+      button {
+        margin-top: 0px;
+        margin-left: -100px;
+      }
+    }
+  }
+}

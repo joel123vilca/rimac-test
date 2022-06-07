@@ -1,0 +1,55 @@
+.header {
+  background: #ffffff;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10% 0 10%;
+  border-bottom: 1px solid #e4e8f7;
+  .contact {
+    display: flex;
+  }
+  .dubs {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #676f8f;
+    display: block;
+  }
+  .number {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f7dff;
+    margin-left: 15px;
+    display: block;
+  }
+  .call__number {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f7dff;
+    margin-left: 15px;
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .header {
+    height: 50px;
+    display: flex;
+    padding: 0 5% 0 5%;
+    .dubs {
+      display: none;
+    }
+    .number {
+      display: none;
+    }
+    .call__number {
+      display: block;
+    }
+  }
+}
